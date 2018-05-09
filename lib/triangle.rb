@@ -18,8 +18,11 @@ class Triangle
   def kind 
     puts "in kind"
     
-    if(length_side1 <= 0 || length_side2 <= 0 || length_side3 <= 0)
+    if(@length_side1 <= 0 || @length_side2 <= 0 || @length_side3 <= 0)
+      puts "negative or zero side"
       # raise error Triangle::TriangleError
+    elsif
+    
     end
     
     
