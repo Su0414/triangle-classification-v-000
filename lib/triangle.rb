@@ -3,7 +3,9 @@ require 'pry'
 class Triangle
   # write code here
   
-  attr_accessor :length_side1, :length_side2, :length_side3, :array_sides
+  attr_accessor :length_side1, :length_side2, :length_side3
+  
+  @@all = []
   
   def initialize(length_side1, length_side2, length_side3)
     puts "In initialize"
@@ -11,15 +13,19 @@ class Triangle
     @length_side2 = length_side2
     @length_side3 = length_side3
     
-    @array_sides << length_side1 << length_side2 << length_side3
-    puts @array_sides
+    @@all << length_side1 << length_side2 << length_side3
+    puts @@all
     
+  end 
+  
+  def self.all 
+    @@all 
   end 
   
   def kind 
     puts "in kind"
-    @array_sides.sort 
-    puts @array_sides 
+    @@all.sort 
+    puts @@all
      
    
     
