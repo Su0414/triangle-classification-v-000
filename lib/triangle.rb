@@ -3,29 +3,24 @@ require 'pry'
 class Triangle
   # write code here
   
-  attr_accessor :length_side1, :length_side2, :length_side3
+  attr_accessor :side1, :side2, :side3
   
   @@all = []
   
-  def initialize(length_side1, length_side2, length_side3)
+  def initialize(side1, side2, side3)
     puts "In initialize"
-    @length_side1 = length_side1
-    @length_side2 = length_side2
-    @length_side3 = length_side3
-    
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
   end 
  
   def kind 
     puts "in kind"
-    
-    if(@length_side1 <= 0 || @length_side2 <= 0 || @length_side3 <= 0)
-      puts "negative or zero side"
-      # raise error Triangle::TriangleError
-    elsif
-    
-    end
-    
-    
+    [side1, side2, side3].any? do |side|
+      if side <= 0 
+        
+      
+    end 
    
   end 
   
