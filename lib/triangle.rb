@@ -13,7 +13,10 @@ class Triangle
     @length_side2 = length_side2
     @length_side3 = length_side3
     
-    @@all << length_side1 << length_side2 << length_side3
+    @@all << length_side1 
+    @@all << length_side2 
+    @@all << length_side3
+    
     puts @@all
     
   end 
