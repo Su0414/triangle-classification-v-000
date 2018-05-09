@@ -5,8 +5,6 @@ class Triangle
   
   attr_accessor :side1, :side2, :side3
   
-  @@all = []
-  
   def initialize(side1, side2, side3)
     puts "In initialize"
     @side1 = side1
