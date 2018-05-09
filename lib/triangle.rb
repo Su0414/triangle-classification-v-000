@@ -21,7 +21,8 @@ class Triangle
       raise TriangleError, "Sides must have positive length" 
     end 
     
-    
+    sides = [@side1, @side2, @side3].sort 
+    if(sides[0] )
    
   end 
   
