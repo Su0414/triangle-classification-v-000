@@ -29,6 +29,8 @@ class Triangle
     puts "in kind"
     @@all.sort 
     puts @@all
+    
+    
   end 
   
   class TriangleError < StandardError 
