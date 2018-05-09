@@ -13,24 +13,14 @@ class Triangle
     @length_side2 = length_side2
     @length_side3 = length_side3
     
-    @@all << length_side1 
-    @@all << length_side2 
-    @@all << length_side3
-    
-    puts @@all
-    
   end 
-  
-  def self.all 
-    @@all 
-  end 
-  
+ 
   def kind 
     puts "in kind"
-    @@all.sort 
-    puts @@all
-    
-    
+    if(length_side1 == 0 || length_side2 == 0 || length_side3 == 0)
+      # raise error 
+    end
+   
   end 
   
   class TriangleError < StandardError 
