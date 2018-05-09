@@ -22,7 +22,16 @@ class Triangle
     end 
     
     sides = [@side1, @side2, @side3].sort 
-    if(sides[0] )
+    unless (sides[0] + sides[1] > sides[2])
+      raise TriangleError, "Triangle inequality"
+    end 
+    
+    if(@side1 = @side2) && (@side1 = @side3)
+      return ":equilateral"
+    end 
+    
+    if()
+    
    
   end 
   
