@@ -17,9 +17,12 @@ class Triangle
  
   def kind 
     puts "in kind"
-    if(length_side1 == 0 || length_side2 == 0 || length_side3 == 0)
-      # raise error 
+    
+    if(length_side1 <= 0 || length_side2 <= 0 || length_side3 <= 0)
+      # raise error Triangle::TriangleError
     end
+    
+    
    
   end 
   
